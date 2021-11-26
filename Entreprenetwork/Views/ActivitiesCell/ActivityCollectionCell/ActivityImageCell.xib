@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ActivityImageCell" id="gTV-IL-0wX" customClass="ActivityImageCell" customModule="Entreprenetwork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIM-Bt-ByJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="EIM-Bt-ByJ" secondAttribute="height" multiplier="1:1" id="P9x-ES-Tme"/>
+                        </constraints>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i07-WF-eOz" customClass="PlayerView" customModule="Entreprenetwork" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video-camera" translatesAutoresizingMaskIntoConstraints="NO" id="Uf6-zw-9T7">
+                                <rect key="frame" x="379" y="379" width="25" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="7Da-kl-hd8"/>
+                                    <constraint firstAttribute="width" constant="25" id="m3p-Ct-nnb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Uf6-zw-9T7" secondAttribute="trailing" constant="10" id="PJd-OL-NXy"/>
+                            <constraint firstAttribute="bottom" secondItem="Uf6-zw-9T7" secondAttribute="bottom" constant="10" id="QZw-Yj-7fI"/>
+                            <constraint firstAttribute="width" secondItem="i07-WF-eOz" secondAttribute="height" multiplier="1:1" id="ius-UF-Au3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="EIM-Bt-ByJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="27J-DK-fN7"/>
+                <constraint firstAttribute="bottom" secondItem="i07-WF-eOz" secondAttribute="bottom" id="4NI-La-ZRn"/>
+                <constraint firstAttribute="trailing" secondItem="i07-WF-eOz" secondAttribute="trailing" id="51u-B4-xna"/>
+                <constraint firstItem="i07-WF-eOz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Gv2-nJ-GdX"/>
+                <constraint firstAttribute="trailing" secondItem="EIM-Bt-ByJ" secondAttribute="trailing" id="LOf-bc-aue"/>
+                <constraint firstAttribute="bottom" secondItem="EIM-Bt-ByJ" secondAttribute="bottom" id="aPe-k1-dXV"/>
+                <constraint firstItem="EIM-Bt-ByJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eW9-wX-oNS"/>
+                <constraint firstItem="i07-WF-eOz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xKT-z1-NRK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="btnJobPic" destination="EIM-Bt-ByJ" id="gof-8H-d9Z"/>
+                <outlet property="videoPlayerView" destination="i07-WF-eOz" id="Xnr-XW-oT9"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="117"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="video-camera" width="40" height="40"/>
+    </resources>
+</document>

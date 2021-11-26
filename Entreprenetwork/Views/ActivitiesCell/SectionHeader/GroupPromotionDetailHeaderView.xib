@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GroupPromotionDetailHeaderView" customModule="Werkules" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xjZ-dy-gQn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dPj-bJ-ZYh">
+                            <rect key="frame" x="10" y="5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Wlc-PD-Ziy"/>
+                                <constraint firstAttribute="width" constant="40" id="itr-hZ-sXo"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Super Cleaner Company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lx8-0H-er8">
+                            <rect key="frame" x="60" y="12.5" width="310" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="sp5-MN-iRh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="lx8-0H-er8" secondAttribute="trailing" constant="5" id="2v0-89-hbI"/>
+                        <constraint firstItem="dPj-bJ-ZYh" firstAttribute="leading" secondItem="xjZ-dy-gQn" secondAttribute="leading" constant="10" id="3JK-pp-fmA"/>
+                        <constraint firstItem="dPj-bJ-ZYh" firstAttribute="centerY" secondItem="lx8-0H-er8" secondAttribute="centerY" id="C7R-Ag-RyI"/>
+                        <constraint firstItem="lx8-0H-er8" firstAttribute="leading" secondItem="dPj-bJ-ZYh" secondAttribute="trailing" constant="10" id="hCj-Ct-dbz"/>
+                        <constraint firstItem="dPj-bJ-ZYh" firstAttribute="centerY" secondItem="xjZ-dy-gQn" secondAttribute="centerY" id="lQK-U2-hOk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xjZ-dy-gQn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="MEs-IB-iSQ"/>
+                <constraint firstItem="xjZ-dy-gQn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Tfo-3b-ESJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xjZ-dy-gQn" secondAttribute="trailing" id="Tgr-6a-Vtd"/>
+                <constraint firstAttribute="bottom" secondItem="xjZ-dy-gQn" secondAttribute="bottom" id="YpY-Lh-ZvF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageViewBusinessness" destination="dPj-bJ-ZYh" id="JSL-fH-5D6"/>
+                <outlet property="lblCompanyName" destination="lx8-0H-er8" id="XhA-Hv-RUP"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="-20.424107142857142"/>
+        </view>
+    </objects>
+</document>

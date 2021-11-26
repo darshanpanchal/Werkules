@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="SenderCell" selectionStyle="default" indentationWidth="10" rowHeight="149" id="KGk-i7-Jjw" customClass="SenderCell" customModule="Werkules" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="563" height="149"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="563" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lac-e9-sv6" customClass="PaddingLabel" customModule="Werkules" customModuleProvider="target">
+                        <rect key="frame" x="60" y="15" width="0.0" height="99"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5g-OC-X2j">
+                        <rect key="frame" x="60" y="139" width="488" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="4df-bB-DTD">
+                        <rect key="frame" x="5" y="64" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="NfL-du-CJ2"/>
+                            <constraint firstAttribute="width" constant="50" id="aqs-84-eSS"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Lac-e9-sv6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="0WG-56-L7l"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Lac-e9-sv6" secondAttribute="trailing" constant="15" id="1Zm-Ez-4xE"/>
+                    <constraint firstItem="J5g-OC-X2j" firstAttribute="leading" secondItem="Lac-e9-sv6" secondAttribute="leading" id="5kU-Pb-hfo"/>
+                    <constraint firstItem="Lac-e9-sv6" firstAttribute="leading" secondItem="4df-bB-DTD" secondAttribute="trailing" constant="5" id="H2X-33-HBx"/>
+                    <constraint firstItem="Lac-e9-sv6" firstAttribute="bottom" secondItem="4df-bB-DTD" secondAttribute="bottom" id="Hrc-yy-PBv"/>
+                    <constraint firstAttribute="trailing" secondItem="J5g-OC-X2j" secondAttribute="trailing" constant="15" id="MKk-M5-Ujb"/>
+                    <constraint firstAttribute="bottom" secondItem="Lac-e9-sv6" secondAttribute="bottom" constant="35" id="TGw-ma-NkG"/>
+                    <constraint firstItem="Lac-e9-sv6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="n34-F7-rCd"/>
+                    <constraint firstAttribute="bottom" secondItem="J5g-OC-X2j" secondAttribute="bottom" constant="10" id="u2a-k0-4fv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imgVwProfilePic" destination="4df-bB-DTD" id="Hbr-iQ-wbE"/>
+                <outlet property="lblChatText" destination="Lac-e9-sv6" id="SyD-Zs-QzD"/>
+                <outlet property="lblTime" destination="J5g-OC-X2j" id="hPl-6h-DiB"/>
+            </connections>
+            <point key="canvasLocation" x="-156" y="280.20989505247377"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="user_placeholder" width="100" height="100"/>
+    </resources>
+</document>

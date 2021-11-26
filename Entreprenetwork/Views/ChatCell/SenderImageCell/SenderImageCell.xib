@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SenderImageCell" id="KGk-i7-Jjw" customClass="SenderImageCell" customModule="Werkules" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHH-sZ-aaF">
+                        <rect key="frame" x="70" y="10" width="100" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pdf" translatesAutoresizingMaskIntoConstraints="NO" id="Fah-Bk-uRy">
+                                <rect key="frame" x="5" y="5" width="90" height="90"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="YRj-YD-e1v"/>
+                                    <constraint firstAttribute="height" constant="90" id="w0W-Wk-LXE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="0Ud-7j-1Y2"/>
+                            <constraint firstItem="Fah-Bk-uRy" firstAttribute="leading" secondItem="EHH-sZ-aaF" secondAttribute="leading" constant="5" id="83f-WV-beT"/>
+                            <constraint firstAttribute="height" constant="100" id="CqU-9r-POa"/>
+                            <constraint firstItem="Fah-Bk-uRy" firstAttribute="top" secondItem="EHH-sZ-aaF" secondAttribute="top" constant="5" id="OWi-QC-2nh"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="tAV-yq-lOU">
+                        <rect key="frame" x="10" y="60" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="dRF-pm-pho"/>
+                            <constraint firstAttribute="width" constant="50" id="wAJ-Wn-dz1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYQ-Em-oPC">
+                        <rect key="frame" x="70" y="118" width="24.5" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="QsI-UF-gJm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="10"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tAV-yq-lOU" firstAttribute="bottom" secondItem="EHH-sZ-aaF" secondAttribute="bottom" id="5xK-n3-n5B"/>
+                    <constraint firstItem="EHH-sZ-aaF" firstAttribute="leading" secondItem="tAV-yq-lOU" secondAttribute="trailing" constant="10" id="D0g-Wj-mwo"/>
+                    <constraint firstItem="tAV-yq-lOU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="eDl-BC-l8a"/>
+                    <constraint firstItem="aYQ-Em-oPC" firstAttribute="top" secondItem="EHH-sZ-aaF" secondAttribute="bottom" constant="8" id="eUv-mJ-0OD"/>
+                    <constraint firstItem="aYQ-Em-oPC" firstAttribute="leading" secondItem="EHH-sZ-aaF" secondAttribute="leading" id="ec2-cz-9pe"/>
+                    <constraint firstAttribute="bottom" secondItem="EHH-sZ-aaF" secondAttribute="bottom" constant="30" id="hJZ-wu-HKf"/>
+                    <constraint firstItem="EHH-sZ-aaF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="oa4-Ub-IRs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="chatImage" destination="Fah-Bk-uRy" id="INv-ta-sjb"/>
+                <outlet property="imgVwProfilePic" destination="tAV-yq-lOU" id="YvF-uv-cDg"/>
+                <outlet property="lblTime" destination="aYQ-Em-oPC" id="TyH-8q-vel"/>
+                <outlet property="viewBG" destination="EHH-sZ-aaF" id="y8j-Z1-U90"/>
+            </connections>
+            <point key="canvasLocation" x="-318" y="73"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pdf" width="256" height="256"/>
+        <image name="user_placeholder" width="100" height="100"/>
+    </resources>
+</document>

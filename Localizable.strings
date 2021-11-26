@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  Entreprenetwork
+
+  Created by Sujal Adhia on 20/02/20.
+  Copyright © 2020 Sujal Adhia. All rights reserved.
+*/
+
+
+"app_name" = "App_Name";
+"Werkules" = "Werkules";
+"app_launch" = "App_Launch";
+"click_home_tab" = "Home_Tab_Clicked";
+"new_job_post" = "New_Job_Posted";
+"job_post_title" = "Job_Title";
+"login_successful" = "Login_Successful";
+"user_name" = "User_Name";
+"account_created_successful" = "account_Created_Successful";
+"click_messages_tab" = "Message_Tab_Clicked";
+"job_profile_view" = "View_Job_Profile";
+"job_title" = "Job_Title";
+"click_report_job" = "Report_Job_Clicked";
+"click_contact_user" = "Contact_User_Clicked";
+"profile_update" = "Profile_Updated";
+"chat_initiate" = "Chat_Initiated";
+"from_user_name" = "From_User_Name";
+"to_user_name" = "To_User_Name";
+"user_profile_view" = "View_User_Profile";
+"click_activity_tab" = "Activity_Tab_Clicked";
+"like_added" = "Liked_Post";
+"comment_added" = "comment_Post";
+"click_professionals_around" = "Professionals_Around_Clicked";
+"click_post_job_tab" = "Post_Job_Tab_Clicked";
+"new_activity_post" = "New_Activity_Posted";
+"activity_post_title" = "Activity_Post_Title";
+

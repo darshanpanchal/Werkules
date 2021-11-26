@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   VocabularyEnglish.plist
+   Entreprenetwork
+
+   Created by IPS on 08/01/21.
+   Copyright (c) 2021 Sujal Adhia. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+    <key>HelpViewController_Skip</key>
+    <string>Skip</string>
+    <key>HelpViewController_Next</key>
+     <string>Next</string>
+    </dict>
+</plist>

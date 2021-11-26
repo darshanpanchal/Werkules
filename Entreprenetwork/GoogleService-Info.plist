@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>200571368938-afthgkn700d1th76krs3a9vt97co612q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.200571368938-afthgkn700d1th76krs3a9vt97co612q</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>200571368938-500ijc91en5krs6sorrdef3216pokqib.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCAffkTMj7zcHKAJ0f6tVs_Ex8egH0TTDk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>200571368938</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Werkules.EntreprenetworkApp</string>
+	<key>PROJECT_ID</key>
+	<string>werkules-edf2c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>werkules-edf2c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:200571368938:ios:c4338133f1c76e9700ae93</string>
+	<key>DATABASE_URL</key>
+	<string>https://werkules-edf2c.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="93" id="KGk-i7-Jjw" customClass="BankDetailTableViewCell" customModule="Werkules" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="425" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nx7-FN-Fau" customClass="ShadowBackgroundView" customModule="Werkules" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="415" height="83"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZT-1v-MXT">
+                        <rect key="frame" x="5" y="5" width="415" height="83"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="COo-U6-lsy">
+                                <rect key="frame" x="375" y="26.5" width="30" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beS-u5-NKj">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="ISw-19-WFv"/>
+                                            <constraint firstAttribute="height" constant="30" id="p68-mf-Qub"/>
+                                        </constraints>
+                                        <state key="normal" image="delete_trash"/>
+                                        <connections>
+                                            <action selector="buttonDeleteBankAccountWithSender:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kkC-4A-eO0"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaN-NZ-9nu">
+                                        <rect key="frame" x="30" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="FgU-sv-qxX"/>
+                                            <constraint firstAttribute="width" constant="30" id="kAL-JP-Ia2"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" image="arrow"/>
+                                        <connections>
+                                            <action selector="buttonSelectBankAccountWithSender:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GG9-pc-JIH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oiR-rl-xWO">
+                                <rect key="frame" x="10" y="10" width="355" height="63"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3Q-T6-fHO">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="26.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5f-cr-Qfy">
+                                        <rect key="frame" x="0.0" y="36.5" width="355" height="26.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oiR-rl-xWO" firstAttribute="leading" secondItem="MZT-1v-MXT" secondAttribute="leading" constant="10" id="10B-qG-BcX"/>
+                            <constraint firstAttribute="trailing" secondItem="COo-U6-lsy" secondAttribute="trailing" constant="10" id="6gA-lt-gus"/>
+                            <constraint firstAttribute="bottom" secondItem="oiR-rl-xWO" secondAttribute="bottom" constant="10" id="9o9-o2-tvm"/>
+                            <constraint firstItem="oiR-rl-xWO" firstAttribute="top" secondItem="MZT-1v-MXT" secondAttribute="top" constant="10" id="CRc-Jn-2J7"/>
+                            <constraint firstItem="COo-U6-lsy" firstAttribute="leading" secondItem="oiR-rl-xWO" secondAttribute="trailing" constant="10" id="DBv-Bl-8um"/>
+                            <constraint firstItem="COo-U6-lsy" firstAttribute="centerY" secondItem="MZT-1v-MXT" secondAttribute="centerY" id="TFK-QO-h7G"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="MZT-1v-MXT" secondAttribute="trailing" constant="5" id="9tc-gB-UMX"/>
+                    <constraint firstItem="nx7-FN-Fau" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="9xP-Rr-apf"/>
+                    <constraint firstItem="nx7-FN-Fau" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="J3s-qc-Bvd"/>
+                    <constraint firstAttribute="trailing" secondItem="nx7-FN-Fau" secondAttribute="trailing" constant="5" id="KFb-3Z-1g5"/>
+                    <constraint firstItem="MZT-1v-MXT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="N4j-u4-6hd"/>
+                    <constraint firstAttribute="bottom" secondItem="MZT-1v-MXT" secondAttribute="bottom" constant="5" id="TCM-A1-MhI"/>
+                    <constraint firstItem="MZT-1v-MXT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="ahJ-kh-fTH"/>
+                    <constraint firstAttribute="bottom" secondItem="nx7-FN-Fau" secondAttribute="bottom" constant="5" id="dKQ-8d-F5Q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buttonDelete" destination="beS-u5-NKj" id="Zie-62-lZC"/>
+                <outlet property="buttonSelect" destination="iaN-NZ-9nu" id="oht-JS-JFz"/>
+                <outlet property="containerView" destination="MZT-1v-MXT" id="H0c-Ei-sob"/>
+                <outlet property="lblBankName" destination="m3Q-T6-fHO" id="GVU-3l-teC"/>
+                <outlet property="lblBankNumber" destination="K5f-cr-Qfy" id="WdG-rl-LHi"/>
+                <outlet property="shadowBackground" destination="nx7-FN-Fau" id="is0-Ob-sPu"/>
+            </connections>
+            <point key="canvasLocation" x="207.97101449275365" y="66.629464285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow" width="32" height="32"/>
+        <image name="delete_trash" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

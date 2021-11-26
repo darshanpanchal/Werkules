@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="215" id="KGk-i7-Jjw" customClass="GroupEarningTableViewCell" customModule="Werkules" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="585" height="215"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="585" height="215"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Super Cleaner Company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="B1R-L5-Tct">
+                        <rect key="frame" x="10" y="10" width="565" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="WOr-Fc-al4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sOB-uL-ACA">
+                        <rect key="frame" x="5" y="45" width="575" height="155"/>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcU-74-3ux">
+                        <rect key="frame" x="15" y="55" width="504.5" height="150"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                        <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="$ 500" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McK-UX-Nvp">
+                        <rect key="frame" x="529.5" y="55" width="40.5" height="150"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgp-ZZ-4YB">
+                        <rect key="frame" x="5" y="213.5" width="575" height="0.5"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="8P4-AP-77t"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="TcU-74-3ux" secondAttribute="bottom" constant="10" id="0V1-V3-1f9"/>
+                    <constraint firstItem="B1R-L5-Tct" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="9eM-sF-oBb"/>
+                    <constraint firstItem="Pgp-ZZ-4YB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="BIj-lh-d1P"/>
+                    <constraint firstItem="McK-UX-Nvp" firstAttribute="leading" secondItem="TcU-74-3ux" secondAttribute="trailing" constant="10" id="LjM-te-CxZ"/>
+                    <constraint firstItem="McK-UX-Nvp" firstAttribute="centerY" secondItem="TcU-74-3ux" secondAttribute="centerY" id="ONX-rl-aBW"/>
+                    <constraint firstItem="McK-UX-Nvp" firstAttribute="height" secondItem="TcU-74-3ux" secondAttribute="height" id="QMz-8X-pie"/>
+                    <constraint firstItem="sOB-uL-ACA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="U1X-Fo-Ne6"/>
+                    <constraint firstAttribute="trailing" secondItem="McK-UX-Nvp" secondAttribute="trailing" constant="15" id="Wpa-W4-jzJ"/>
+                    <constraint firstItem="sOB-uL-ACA" firstAttribute="top" secondItem="TcU-74-3ux" secondAttribute="top" constant="-10" id="Xfs-wg-T6V"/>
+                    <constraint firstAttribute="trailing" secondItem="B1R-L5-Tct" secondAttribute="trailing" constant="10" id="aGe-85-Xpq"/>
+                    <constraint firstItem="sOB-uL-ACA" firstAttribute="bottom" secondItem="TcU-74-3ux" secondAttribute="bottom" constant="-5" id="adM-hP-1TK"/>
+                    <constraint firstAttribute="trailing" secondItem="Pgp-ZZ-4YB" secondAttribute="trailing" constant="5" id="dW6-i5-vjF"/>
+                    <constraint firstAttribute="trailing" secondItem="sOB-uL-ACA" secondAttribute="trailing" constant="5" id="e17-Lx-AlT"/>
+                    <constraint firstAttribute="bottom" secondItem="Pgp-ZZ-4YB" secondAttribute="bottom" constant="1" id="lLv-LZ-0wv"/>
+                    <constraint firstItem="TcU-74-3ux" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="s7d-Jj-5dr"/>
+                    <constraint firstItem="TcU-74-3ux" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="55" id="sY4-NS-IvF"/>
+                    <constraint firstItem="B1R-L5-Tct" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="vTc-Ik-9yk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="sOB-uL-ACA" id="5ly-WO-pSL"/>
+                <outlet property="lblCompanyName" destination="B1R-L5-Tct" id="So3-RP-grv"/>
+                <outlet property="lblPromotionAmount" destination="McK-UX-Nvp" id="kJT-Gy-FIu"/>
+                <outlet property="lblPromotionName" destination="TcU-74-3ux" id="CjH-Vk-YNK"/>
+            </connections>
+            <point key="canvasLocation" x="160.1449275362319" y="87.388392857142847"/>
+        </tableViewCell>
+    </objects>
+</document>
